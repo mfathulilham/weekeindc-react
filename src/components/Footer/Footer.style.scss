@@ -1,0 +1,38 @@
+footer {
+    background-color: #0B24FB;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 213px;
+
+    h5 {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    span {
+        border: 1px solid #fff;
+        border-radius: 12px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight: 300;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    footer {
+        padding: 27px 24px 26px;
+    
+        h5 {
+            font-size: 12px;
+        }
+    
+        span {
+            font-size: 10px;
+            border-radius: 9px;
+            padding-left: 9px;
+            padding-right: 9px;
+        }
+    }
+}

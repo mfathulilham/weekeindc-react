@@ -1,0 +1,122 @@
+.quotes {
+    position: relative;
+    background-color: #EEBECE;
+    
+    .path-pink {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .img-astronout {
+        position: absolute;
+        right: 31px;
+        height: 158px;
+        transform: rotate(-90deg);
+    }
+
+    .circle-blue{
+        width: 89px;
+        position: absolute;
+        left: 283px;
+        bottom: 70px;
+    }
+
+    .quotes-content {
+        font-size: 21px;
+        line-height: 32px;
+        text-align: right;
+
+        p:nth-child(1) {
+            font-weight: 500;
+        }
+
+        span {
+            color: #0B24FB;;
+            font-weight: 700;
+        }
+
+        p:nth-child(2) {
+            color: #fff;
+            font-weight: 600;
+            font-style: italic;
+            margin-top: 30px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .quotes {
+        position: relative;
+        background-color: #EEBECE;
+        height: 648px;
+        width: 100%;
+    
+        .circle-blue{
+            width: 89px;
+            position: absolute;
+            left: 57px;
+            bottom: 93px;
+        }
+    
+        .quotes-content {
+            padding: 221px 32px 0;
+            font-size: 16px;
+            line-height: 24px;
+                
+            p:nth-child(2) {
+                margin-top: 20px;
+            }
+        }
+    
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .quotes {
+        height: 591px;
+        width: 100%;    
+    
+        .quotes-content {
+            padding: 152px 50px 0;    
+        }
+    
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .quotes {
+        .circle-blue{
+            width: 89px;
+            position: absolute;
+            left: 283px;
+            bottom: 70px;
+        }
+    
+        .quotes-content {
+            padding: 152px 100px 0;
+                
+            p:nth-child(2) {
+                margin-top: 20px;
+            }
+        }
+    
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .quotes {
+        
+        .quotes-content {
+            padding: 152px 373px 0;
+            font-size: 21px;
+            line-height: 32px;
+                
+            p:nth-child(2) {
+                margin-top: 20px;
+            }
+        }
+    
+    }
+}

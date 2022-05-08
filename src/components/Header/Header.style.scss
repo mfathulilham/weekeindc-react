@@ -1,0 +1,41 @@
+header {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    
+    .header-wrapper {
+        display: flex;
+        margin-left: 213px;
+        padding: 17px 0;
+        
+        .header-content {
+            margin-left: 13px;
+            text-align: left;
+            // background-color: aqua;
+        }
+        
+        .header-title {
+            font-size: 12px;        
+            line-height: 14.06px;
+            margin: 0;
+        }
+        
+        .header-desc {
+            font-size: 16px;
+            font-weight: 700;
+            margin: 0;
+        }
+    }    
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        width: 100%;
+        .header-wrapper {
+            margin-left: 24px;
+        }
+    }    
+}

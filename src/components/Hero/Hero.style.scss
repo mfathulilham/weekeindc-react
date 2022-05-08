@@ -1,0 +1,128 @@
+.hero {
+    height: 768px;
+    width: 100%;
+    position: relative;
+    background-color: #EEBECE;
+    overflow: hidden;
+    
+    .main-bg {
+        width: 100%;
+        z-index: 0;
+    }
+
+    .decor-1 {
+        position: absolute;
+        top: 0;
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        left: 119px;
+        
+        img:nth-child(2){
+            margin-top: 90.17px;
+        }
+    }        
+        
+    .decor-2 {
+        position: absolute;
+        top: 303px;
+        right: 161px;
+    }
+    
+    .hero-wrapper {
+        display: block;
+        position: absolute;
+        top: 151px;
+        left: 0;
+        right: 0;
+        color: #fff;
+        z-index: 8;
+
+        h1 {
+            font-size: 62px;
+            line-height: 51px;
+            font-weight: 900;
+        }
+
+        h5 {
+            font-style: italic;
+            font-size: 21px;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+        .hero-bottom {
+            margin-top: 67px;
+            position: relative;
+
+            
+            .button {
+                position: absolute;
+                top: 200px;
+                left: 50%;
+                transform: translate(-50%, 0%);
+                background-color: #fff;
+                width: 231px;
+                height: 58px;
+                border-radius: 29px;
+                box-shadow: 0px 20px 30px rgba(249, 131, 171, 0.5);
+                border: none;
+                padding: 20px 0 19px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+    .hero {
+        height: 667px;
+
+        .main-bg {
+            width: 1366px;
+            position: absolute;
+            top: 0;
+            left: -496px;
+        }
+
+        .decor-1 {        
+            left: 0;
+
+            img:nth-child(1){
+                position: absolute;
+                top: 0;
+                left: -377px;
+                width: 751.56px;
+            }
+            
+            img:nth-child(2){
+                position: absolute;
+                top: 206px;
+                left: -66px;
+                width: 132px;
+            }
+        }
+
+        .decor-2 {
+            display: none;
+        }
+
+        .hero-wrapper {
+            top: 134px;
+
+            h1 {
+                font-size: 52px;
+                line-height: 51px;
+                font-weight: 900;
+            }
+    
+            h5 {
+                font-size: 16px;
+                margin-top: 20px;
+                font-weight: 600;
+            }
+
+        }
+    }    
+}

@@ -1,0 +1,245 @@
+.content {
+    position: relative;
+    background-color: #000;
+    width: 100%;
+    height: 1473px;
+
+    .path-pink4 {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    
+    .astronout {
+        position: absolute;
+        left: 31px;
+        bottom: 98px;
+        transform: rotate(180deg);
+        width: 137px;
+    }
+
+    .testimonial {
+        padding: 1px;
+        
+        .title {
+            position: relative;
+            z-index: 50;
+            font-size: 32px;
+            font-weight: 900;
+            color: #fff;
+            text-shadow: 0px 20px 30px rgba(249, 131, 171, 0.7);
+            margin-top: -116px;
+            // margin-top: -113px;
+        }
+    
+        .card-wrapper {
+            padding: 25px 340px;
+            margin-top: 10px;
+            text-align: left;
+            
+            .slick-slide {
+                margin: 0 5px;
+            }
+            
+            .slick-list {
+                margin: 0 60px; 
+            }
+            
+            .slick-dots{
+                bottom: 0;
+                padding: 100px !important;
+            }
+            
+            
+            .card {
+                background-color: #fff;
+                border: none;
+                padding: 20px;
+                width: 247px !important;
+                height: 105px !important;
+                border-radius: 0;
+    
+                h1 {
+                    font-size: 32px;
+                    font-weight: 900;
+                    line-height: 37.54px;
+                }
+
+                p {
+                    margin-top: 20px;
+                    font-size: 12px;
+                }
+            }
+        }            
+    }
+
+    .pov {
+        color: #fff;
+        margin: 67px 373px 0px;
+        // padding: 0 373px;
+        text-align: center;
+
+        h1 {
+            font-size: 32px;
+            font-weight: 900;    
+        }
+
+        p {
+            margin-top: 30px;
+            font-size: 18px;
+        }
+    }
+    
+    .resource {
+        color: #fff;
+        margin: 67px 373px 0;
+
+        h1 {
+            font-size: 32px;
+            font-weight: 900;    
+        }
+
+        p {
+            margin-top: 30px;
+            font-size: 18px;
+        }
+    }
+
+    .help {
+        color: #fff;
+        margin-top: 100px;
+        // padding: 0 206px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        h1 {
+            font-size: 32px;
+            font-weight: 900;    
+        }
+    
+        .card-wrapper {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(3, 311px);
+            gap: 10px;
+ 
+            .card {
+                position: relative;
+                border-radius: 0;
+                height: 176px;
+                border: none;
+     
+                .link-container {
+                    background-color: rgba(0, 0, 0, 0.5);
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 17px 25px;
+ 
+                    h5 {
+                        color: #fff;
+                        font-size: 16px;
+                        font-weight: 700;
+                        text-align: left;
+                        margin: 0;
+                    }
+                }
+            }
+       }
+    }
+    
+    .set {
+        color: #fff;
+        margin: 127px 373px 0;
+    
+        h1 {
+            font-size: 32px;
+            font-weight: 900;    
+        }
+    
+        p {
+            margin-top: 30px;
+            font-size: 18px;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .content {
+        height: 2038px;
+    
+        .testimonial {
+            padding: 1px;
+            
+            .title {
+                color: #fff;
+                text-shadow: 0px 20px 30px rgba(249, 131, 171, 0.7);
+                margin-top: -116px;
+                margin-left: 32px;
+                text-align: left;
+            }
+        
+            .card-wrapper {
+                padding: 30px 32px 0;
+                margin-top: 0px;
+                text-align: left;
+                
+                .slick-slide {
+                    margin: 0 5px;
+                }
+                
+                .slick-list {
+                    margin: 0 0; 
+                }
+            }            
+        }
+    
+        .pov {
+            margin: 67px 32px 0;
+            text-align: left;
+    
+            p {
+                font-size: 16px;
+            }
+        }
+        
+        .resource {
+            margin: 67px 32px 0;
+            text-align: left;
+    
+            p {
+                font-size: 16px;
+            }
+        }
+    
+        .help {
+            margin: 67px 32px 0;
+            display: block;
+            
+            h1 {
+                text-align: left;
+            }
+        
+           .card-wrapper {
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+           }
+        }
+        
+        .set {
+            margin: 67px 32px 0;
+            text-align: left;
+    
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
