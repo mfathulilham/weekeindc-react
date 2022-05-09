@@ -10,11 +10,11 @@ header {
         display: flex;
         margin-left: 213px;
         padding: 17px 0;
+        animation: 1s ease-out 0s 1 bounce;
         
         .header-content {
             margin-left: 13px;
             text-align: left;
-            // background-color: aqua;
         }
         
         .header-title {
@@ -31,7 +31,13 @@ header {
     }    
 }
 
-@media only screen and (max-width: 600px) {
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+    40% {transform: translateY(-10px);} 
+    60% {transform: translateY(-5px);} 
+ } 
+
+@media only screen and (max-width: 998px) {
     header {
         width: 100%;
         .header-wrapper {
